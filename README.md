@@ -1,6 +1,6 @@
 # VueJS roving tabindex mixin
 
-[![npm version](https://badge.fury.io/js/roving-tabindex-element-list.svg)](https://badge.fury.io/js/roving-tabindex-element-list)
+[![npm version](https://badge.fury.io/js/vue-mixin-roving-tabindex.svg)](https://badge.fury.io/js/vue-mixin-roving-tabindex)
 
 A VueJS mixin for handling roving tabindex
 
