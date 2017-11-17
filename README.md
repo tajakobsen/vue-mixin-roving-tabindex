@@ -1,4 +1,6 @@
-# VueJS Roving Tabindex Mixin
+# VueJS roving tabindex mixin
+
+[![npm version](https://badge.fury.io/js/roving-tabindex-element-list.svg)](https://badge.fury.io/js/roving-tabindex-element-list)
 
 A VueJS mixin for handling roving tabindex
 
@@ -34,3 +36,7 @@ Add `v-navigation-list="<list-name>"` to elements, to create a roving tabindex f
 ```
 
 In the example above there are two seperate roving tabindex lists (`myList` and `myOtherList`);
+
+## Licence
+
+This librariy is licenced with the [MIT Licence](LICENCE)
