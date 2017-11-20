@@ -37,6 +37,22 @@ Add `v-navigation-list="<list-name>"` to elements, to create a roving tabindex f
 
 In the example above there are two seperate roving tabindex lists (`myList` and `myOtherList`);
 
+## Modifiers
+
+Note that the modifiers is applied to he whole list, not individual elements. But you should apply them to every element
+in the list for consistency.
+
+### Available modifiers
+
+ * `keepsorted` - Will keep the element list sorted based on the position of an element in the dom
+ * `nowrap` - Will prevent the tabindex 
+
+*Example:*
+
+```html
+<div v-navigation-list.keepsorted.nowrap="`interrestingList`"></div>
+```
+
 ## Licence
 
 This librariy is licenced with the [MIT Licence](LICENCE)

@@ -1,6 +1,6 @@
 {
   "name": "vue-mixin-roving-tabindex",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Add roving tabindex to element sets trough an html attribute",
   "main": "index.js",
   "scripts": {
@@ -26,7 +26,7 @@
   "homepage": "https://github.com/tajakobsen/vue-mixin-roving-tabindex#readme",
   "dependencies": {
     "ramda": "^0.25.0",
-    "roving-tabindex-element-list": "^1.1.0"
+    "roving-tabindex-element-list": "^1.2.0"
   },
   "devDependencies": {
     "ava": "^0.23.0",

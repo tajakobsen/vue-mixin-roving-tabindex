@@ -1,5 +1,6 @@
 import { always, ifElse, equals, prop } from 'ramda';
 import SortByDomPositionPlugin from 'roving-tabindex-element-list/src/plugins/sort-by-dom-position';
+import PreventWrappingPlugin from 'roving-tabindex-element-list/src/plugins/prevent-wrapping';
 import NavigationLists from './navigation-lists';
 
 /**
@@ -25,10 +26,15 @@ const navigationListDirective = {
    * @param {Element} el
    * @param {object} binding
    * @param {object} binding.modifiers
+   * @param {boolean} binding.modifiers.keepsorted
+   * @param {boolean} binding.modifiers.nowrap
    */
   bind(el, binding) {
     if (binding.modifiers.keepsorted) {
       navigationListMap.addPlugin(new SortByDomPositionPlugin());
+    }
+    if (binding.modifiers.nowrap) {
+      navigationListMap.addPlugin(new PreventWrappingPlugin());
     }
     const key = getKeyFromBinding(binding);
     navigationListMap.registerElement(key, el);
